@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.4.0" timestamp="2019-03-21T13:50:53.978">
+<file name="C:\Users\house\eclipse-workspace\serveur\src\main\java\exo\Med.java">
+<violation beginline="48" endline="48" begincolumn="28" endcolumn="54" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="exo" class="Med" method="devval" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;Entrez la première valeur&quot; appears 4 times in this file; the first occurrence is on line 48
+</violation>
+<violation beginline="50" endline="50" begincolumn="28" endcolumn="54" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="exo" class="Med" method="devval" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;Entrez la deuxième valeur&quot; appears 4 times in this file; the first occurrence is on line 50
+</violation>
+</file>
+<file name="C:\Users\house\eclipse-workspace\serveur\src\main\java\fr\hoc\dap\serveur\Launcher.java">
+<violation beginline="15" endline="15" begincolumn="33" endcolumn="35" rule="UnusedPrivateField" ruleset="Best Practices" package="fr.hoc.dap.serveur" class="Launcher" variable="LOG" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'LOG'.
+</violation>
+</file>
+<file name="C:\Users\house\eclipse-workspace\serveur\src\main\java\fr\hoc\dap\serveur\service\CalendarService.java">
+<violation beginline="19" endline="19" begincolumn="36" endcolumn="43" rule="UnusedPrivateField" ruleset="Best Practices" package="fr.hoc.dap.serveur.service" class="CalendarService" variable="INSTANCE" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'INSTANCE'.
+</violation>
+</file>
+<file name="C:\Users\house\eclipse-workspace\serveur\src\main\java\fr\hoc\dap\serveur\service\GmailService.java">
+<violation beginline="36" endline="36" begincolumn="23" endcolumn="30" rule="UnusedLocalVariable" ruleset="Best Practices" package="fr.hoc.dap.serveur.service" class="GmailService" method="getService" variable="messages" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'messages'.
+</violation>
+</file>
+<file name="C:\Users\house\eclipse-workspace\serveur\src\main\java\nano\Administrator.java">
+<violation beginline="9" endline="9" begincolumn="20" endcolumn="28" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Administrator" variable="adminName" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'adminName'.
+</violation>
+<violation beginline="9" endline="9" begincolumn="31" endcolumn="35" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Administrator" variable="email" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'email'.
+</violation>
+</file>
+<file name="C:\Users\house\eclipse-workspace\serveur\src\main\java\nano\Customer.java">
+<violation beginline="5" endline="5" begincolumn="20" endcolumn="31" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Customer" variable="customerName" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'customerName'.
+</violation>
+<violation beginline="6" endline="6" begincolumn="20" endcolumn="27" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Customer" variable="adresses" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'adresses'.
+</violation>
+<violation beginline="7" endline="7" begincolumn="20" endcolumn="24" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Customer" variable="email" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'email'.
+</violation>
+<violation beginline="8" endline="8" begincolumn="20" endcolumn="32" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Customer" variable="crediCardInfo" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'crediCardInfo'.
+</violation>
+<violation beginline="9" endline="9" begincolumn="20" endcolumn="31" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Customer" variable="shippingInfo" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'shippingInfo'.
+</violation>
+</file>
+<file name="C:\Users\house\eclipse-workspace\serveur\src\main\java\nano\OrderDetails.java">
+<violation beginline="4" endline="4" begincolumn="20" endcolumn="30" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="OrderDetails" variable="productName" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'productName'.
+</violation>
+<violation beginline="5" endline="5" begincolumn="17" endcolumn="23" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="OrderDetails" variable="orderId" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'orderId'.
+</violation>
+<violation beginline="5" endline="5" begincolumn="26" endcolumn="34" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="OrderDetails" variable="productId" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'productId'.
+</violation>
+<violation beginline="5" endline="5" begincolumn="37" endcolumn="44" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="OrderDetails" variable="quantity" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'quantity'.
+</violation>
+<violation beginline="6" endline="6" begincolumn="29" endcolumn="36" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="OrderDetails" variable="subtotal" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'subtotal'.
+</violation>
+<violation beginline="6" endline="6" begincolumn="19" endcolumn="26" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="OrderDetails" variable="unitCost" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'unitCost'.
+</violation>
+</file>
+<file name="C:\Users\house\eclipse-workspace\serveur\src\main\java\nano\Orders.java">
+<violation beginline="4" endline="4" begincolumn="60" endcolumn="69" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Orders" variable="customerId" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'customerId'.
+</violation>
+<violation beginline="4" endline="4" begincolumn="46" endcolumn="57" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Orders" variable="customerName" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'customerName'.
+</violation>
+<violation beginline="4" endline="4" begincolumn="20" endcolumn="30" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Orders" variable="dateCreated" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'dateCreated'.
+</violation>
+<violation beginline="4" endline="4" begincolumn="33" endcolumn="43" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Orders" variable="dateShipped" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'dateShipped'.
+</violation>
+<violation beginline="4" endline="4" begincolumn="72" endcolumn="77" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Orders" variable="status" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'status'.
+</violation>
+<violation beginline="5" endline="5" begincolumn="13" endcolumn="22" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Orders" variable="shippingId" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'shippingId'.
+</violation>
+<violation beginline="6" endline="6" begincolumn="17" endcolumn="23" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="Orders" variable="orderId" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'orderId'.
+</violation>
+</file>
+<file name="C:\Users\house\eclipse-workspace\serveur\src\main\java\nano\ShippingInfo.java">
+<violation beginline="4" endline="4" begincolumn="20" endcolumn="31" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="ShippingInfo" variable="shippingType" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'shippingType'.
+</violation>
+<violation beginline="5" endline="5" begincolumn="17" endcolumn="25" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="ShippingInfo" variable="shipingID" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'shipingID'.
+</violation>
+<violation beginline="5" endline="5" begincolumn="28" endcolumn="39" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="ShippingInfo" variable="shippingCost" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'shippingCost'.
+</violation>
+<violation beginline="5" endline="5" begincolumn="42" endcolumn="57" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="ShippingInfo" variable="shippingRegionID" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'shippingRegionID'.
+</violation>
+</file>
+<file name="C:\Users\house\eclipse-workspace\serveur\src\main\java\nano\ShoppingCart.java">
+<violation beginline="4" endline="4" begincolumn="17" endcolumn="22" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="ShoppingCart" variable="cartID" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'cartID'.
+</violation>
+<violation beginline="4" endline="4" begincolumn="49" endcolumn="57" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="ShoppingCart" variable="dataAdded" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'dataAdded'.
+</violation>
+<violation beginline="4" endline="4" begincolumn="25" endcolumn="35" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="ShoppingCart" variable="paproductId" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'paproductId'.
+</violation>
+<violation beginline="4" endline="4" begincolumn="38" endcolumn="46" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="ShoppingCart" variable="quantitys" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'quantitys'.
+</violation>
+</file>
+<file name="C:\Users\house\eclipse-workspace\serveur\src\main\java\nano\User.java">
+<violation beginline="4" endline="4" begincolumn="38" endcolumn="48" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="User" variable="loginStatus" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'loginStatus'.
+</violation>
+<violation beginline="4" endline="4" begincolumn="28" endcolumn="35" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="User" variable="password" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'password'.
+</violation>
+<violation beginline="4" endline="4" begincolumn="20" endcolumn="25" rule="UnusedPrivateField" ruleset="Best Practices" package="nano" class="User" variable="userID" externalInfoUrl="https://pmd.github.io/pmd-6.4.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'userID'.
+</violation>
+</file>
+</pmd>
