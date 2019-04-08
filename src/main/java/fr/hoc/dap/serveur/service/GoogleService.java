@@ -43,7 +43,7 @@ public class GoogleService {
 
     private static List<String> scopes;
 
-    protected Credential getCredentials(final String userKey) throws IOException, GeneralSecurityException {
+    public Credential getCredentials(final String userKey) throws IOException, GeneralSecurityException {
 
         GoogleAuthorizationCodeFlow flow = getFlow();
 
@@ -52,6 +52,13 @@ public class GoogleService {
         //        return new AuthorizationCodeInstalledApp(flow, receiver)
         //                .authorize("user");
 
+        return flow.loadCredential(userKey);
+    }
+
+    public Credential getDataStore(final String userKey) throws GeneralSecurityException, IOException {
+
+        GoogleAuthorizationCodeFlow flow = getFlow();
+        flow.getCredentialDataStore();
         return flow.loadCredential(userKey);
     }
 
