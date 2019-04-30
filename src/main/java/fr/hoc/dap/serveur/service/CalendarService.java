@@ -13,9 +13,12 @@ import com.google.api.services.calendar.Calendar;
 import com.google.api.services.calendar.model.Event;
 import com.google.api.services.calendar.model.Events;
 
-/** la class Clendrier hérite de la class GoogleService . */
+/** 
+ * //TODO TJF by Djer |JavaDoc| Ce commentaire n'est pas utile. JavaDoc va automatiquement extraire les information d'héritage. "Contain all Google calendar services" serait mieux
+ * la class Clendrier hérite de la class GoogleService . */
 @Service
 public class CalendarService extends GoogleService {
+    //TODO TJF by Djer |Spring| Depuis que c'est un "@Service" Spring fait de cette classe un Singleton automatiquement
     private static CalendarService INSTANCE = null;
 
     //    private CalendarService() {
@@ -29,7 +32,8 @@ public class CalendarService extends GoogleService {
 
     /** Maximum events to display.
      * @param userKey */
-
+    //TODO TJF by Djer |POO| "buildService" serait mieux.
+    //TODO TJF by Djer |Audit Code| Prend en comtpe les remarques de ton outils d'audit de code !
     public Calendar getService(String userKey) throws GeneralSecurityException, IOException {
         // Build a new authorized API client service.
         final NetHttpTransport httptransport = GoogleNetHttpTransport.newTrustedTransport();
@@ -44,8 +48,10 @@ public class CalendarService extends GoogleService {
     //     * @throws IOException Google IO
     //     * @throws GeneralSecurityException Google security
     //     *
-
+    //TODO TJF by Djer |Audit Code| Prend en comtpe les remarques de ton outils d'audit de code !
+    //TODO TJF by Djer |POO| Le nom de méthdoe cient en générla un verbe.
     public String nextEvents(final Integer nb, String userKey) throws IOException, GeneralSecurityException {
+        //TODO TJF by Djer |Log4J| Une petite log ? 
         Calendar service = getService(userKey);
         String results = "";
         // List the next 10 events from the primary calendar.

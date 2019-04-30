@@ -28,10 +28,10 @@ import fr.hoc.dap.serveur.Config;
  * Classe parente de tous le serviceGoogle. Permet de gèrer les droits.
  * @author house
  */
-
 @Service
 public class GoogleService {
 
+    //TODO TJF by Djer |JavaDoc| Il manque la JavaDoc
     @Autowired
     public Config maConf;
 
@@ -41,8 +41,10 @@ public class GoogleService {
 
     protected static final JsonFactory JSON_FACTORY = JacksonFactory.getDefaultInstance();
 
+    //TODO TJF by Djer |JavaDoc| Il manque la JavaDoc
     private static List<String> scopes;
 
+    //TODO TJF by Djer |JavaDoc| Il manque la JavaDoc
     public Credential getCredentials(final String userKey) throws IOException, GeneralSecurityException {
 
         GoogleAuthorizationCodeFlow flow = getFlow();
@@ -55,6 +57,8 @@ public class GoogleService {
         return flow.loadCredential(userKey);
     }
 
+    //TODO TJF by Djer |API Google| pouruqoi renoyer un "Credential" ????
+    //TODO TJF by Djer |JavaDoc| Il manque la JavaDoc
     public Credential getDataStore(final String userKey) throws GeneralSecurityException, IOException {
 
         GoogleAuthorizationCodeFlow flow = getFlow();
@@ -76,6 +80,7 @@ public class GoogleService {
      */
     public GoogleAuthorizationCodeFlow getFlow() throws GeneralSecurityException, IOException {
         final NetHttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
+      //TODO TJF by Djer |POO| Il éviter d'intialiser ici, tu va (re) intialiser ta liste a chaque appel de "getFlow". Met ton initialisation dans le construcuteur.
         scopes = new ArrayList<String>();
         scopes.add(CalendarScopes.CALENDAR_READONLY);
         scopes.add(GmailScopes.GMAIL_READONLY);
@@ -91,5 +96,4 @@ public class GoogleService {
 
         return flow;
     }
-
 }

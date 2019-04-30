@@ -8,10 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 /**
+ * //TODO TJF by Djer |JavaDoc| Il manque la description (de la classe) : première ligne de la JavaDoc
  * @author house
- *
  */
-
 @SpringBootApplication
 public class Application {
 

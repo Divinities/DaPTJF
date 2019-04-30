@@ -13,7 +13,8 @@ import com.google.api.services.gmail.Gmail;
 import com.google.api.services.gmail.model.ListMessagesResponse;
 import com.google.api.services.gmail.model.Message;
 
-/** la class GmailService regroupe les méthode pour acceder au nombre de mails. */
+/** //TODO TJF by Djer |JavaDoc| "Regroupe les service pour gère les email Google" serait un peu mieux
+ * la class GmailService regroupe les méthode pour acceder au nombre de mails. */
 @Service
 public class GmailService extends GoogleService {
     //       private static GmailService INSTANCE = null;
@@ -26,6 +27,9 @@ public class GmailService extends GoogleService {
     //        }
     //        return INSTANCE;
     //    }
+    //TODO TJF by Djer |JavaDoc| Il manque la JavaDoc
+    //TODO TJF by Djer |POO| "buildService" serait mieux
+    //TODO TJF by Djer |POO| Devrait être privée
     public Gmail getService(String userKey) throws IOException, GeneralSecurityException {
         final NetHttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
         Gmail service = new Gmail.Builder(httpTransport, JSON_FACTORY, getCredentials(userKey))
@@ -33,6 +37,7 @@ public class GmailService extends GoogleService {
         String userId = "me";
         String query = "is:unread in:inbox";
 
+        //TODO TJF by Djer |IDE| Ton IDE te dit que cette varaible pas/plus utilisée. Bug ? A Supprimer ?
         List<Message> messages = listMessagesMatchingQuery(service, userId, query);
 
         return service;
@@ -45,6 +50,8 @@ public class GmailService extends GoogleService {
      * @throws IOException Google IO
      * @throws GeneralSecurityException Google security
      */
+    //TODO TJF by Djer |POO| Nom de méthode a changer, cette méthode de "display" plus mais elle "retrieve"
+    //TODO TJF by Djer |Audit Code| Prends en compte la remarque de ton outil d'audit de code ("devrait être final")
     public int displayNbUnreadMessage(String userKey) throws IOException, GeneralSecurityException {
         Gmail service = getService(userKey);
         List<Message> messages = listMessagesMatchingQuery(service, "me", "is:unread in:inbox");
@@ -63,6 +70,7 @@ public class GmailService extends GoogleService {
      */
     private List<Message> listMessagesMatchingQuery(final Gmail service, final String userId, final String query)
             throws IOException {
+        //TODO TJF by Djer |Log4J| Une petite log ?
         ListMessagesResponse response = service.users().messages().list(userId).setQ(query).execute();
 
         List<Message> messages = new ArrayList<Message>();
@@ -82,12 +90,11 @@ public class GmailService extends GoogleService {
 
         for (Message message : messages) {
             //System.out.println(message.toPrettyString());
-
+            //TODO TJF by Djer |POO| extrairel'ID de chaque message et ne rien en faire ne sert à rien.
             message.getId();
 
         }
 
         return messages;
     }
-
 }
