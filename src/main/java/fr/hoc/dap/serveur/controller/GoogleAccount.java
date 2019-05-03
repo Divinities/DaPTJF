@@ -25,9 +25,8 @@ import com.google.api.client.http.GenericUrl;
 import fr.hoc.dap.serveur.service.GoogleService;
 
 /**
- *
+ * //TODO TJF by Djer |JavaDoc| Il manque la description (de la classe) : première ligne de la JavaDoc
  * @author house
- *
  */
 @Controller
 public class GoogleAccount extends GoogleService {

@@ -5,9 +5,11 @@
 	<groupId>fr.hoc.dap</groupId>
 	<artifactId>serveur</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<name>Dap_server_TJF</name>
 
 	<properties>
 		<pmdVersion>6.4.0</pmdVersion>
+		<!-- TODO TJF by Djer |Maven| la propriété "java.version" est un racourci (Spring Boot) pour ces deux suivantes. -->
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 
@@ -44,7 +46,7 @@
 			<version>1.23.0</version>
 		</dependency>
 		
-		
+		<!-- TODO TJF by Djer |Maven| Cette dépendance n'est plus utile depuis que l'on gère le "/oAuth2CallBack" nous même (version "serveur") -->
 		<dependency>
 			<groupId>com.google.oauth-client</groupId>
 			<artifactId>google-oauth-client-jetty</artifactId>
@@ -113,22 +115,15 @@
 			</plugins>
 		</pluginManagement>
 
-
 		<plugins>
 
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-
-
 			
 		</plugins>
 	</build>
-
-
-
-
 
 	<reporting>
 
@@ -160,8 +155,5 @@
 			</plugin>
 		</plugins>
 	</reporting>
-
-
-
 
 </project>
